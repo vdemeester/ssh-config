@@ -1,0 +1,6 @@
+*
+!.ssh/
+!.ssh/config.d
+!.ssh/config.d/ZZ-global-options
+!.gitignore.d
+!.gitignore.d/ssh-config
