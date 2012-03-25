@@ -1,4 +1,6 @@
 *
+!bin
+!bin/ssh_wrapper
 !.ssh/
 !.ssh/config.d
 !.ssh/config.d/ZZ-global-options
