@@ -2,6 +2,10 @@
 
 confdir=$HOME/.ssh
 confsubdir=$confdir/config.d
+subconf=default
+if test -d "${confsubdir}/$(hostname)"; then
+    subconf=$(hostname)
+fi
 config=$confdir/config
 
 [ -d $confsubdir ] || mkdir -p $confsubdir
@@ -9,6 +13,7 @@ config=$confdir/config
 # ZDOTDIR should always be set
 source "$ZDOTDIR/lib/libhooks.sh"
 
-rebuild_config "$config" "${confsubdir#$HOME/}"
+echo "Using config directory : ${confsubdir#$HOME/}/${subconf}"
+rebuild_config "$config" "${confsubdir#$HOME/}/${subconf}"
 
 chmod go-rwx -R $config $confdir $confsubdir
