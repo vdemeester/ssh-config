@@ -5,7 +5,7 @@
                                                         |_____|
 
 This repository contains ssh configuration that are not private and tools.
-This aims to be used with [vcsh-home][] at least.
+This aims to be used with [vcsh-home][https://github.com/vdemeester/vcsh-home/] at least.
 
 This repository currently contains :
 
