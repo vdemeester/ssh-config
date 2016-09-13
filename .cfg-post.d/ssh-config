@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 confdir=$HOME/.ssh
 confsubdir=$confdir/config.d
